@@ -513,7 +513,7 @@ def remove_with_word(cr, word, items, dgroup, logfile):
 def deletecomics(cr, deletelist, logfile):
     ''' Moves or deletes the specified comics and removes them from the library'''
     
-    ''' Mostly ripped form StonePawn's Libary Organizer script'''
+    ''' Mostly ripped form Stonepaw's Libary Organizer script'''
     
     if not Directory.Exists(DUPESDIRECTORY):
         try:
@@ -568,4 +568,4 @@ def dmCleanDirectories(directory):
     if len(directory.GetFiles()) == 0 and len(directory.GetDirectories()) == 0:
         parent = directory.Parent
         directory.Delete()
-        CleanDirectories(parent)
+        dmCleanDirectories(parent)
