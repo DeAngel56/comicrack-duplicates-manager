@@ -249,7 +249,7 @@ def DuplicatesManager(books):
     
     # fix for issue 4 - if there are no dupes, end gracefully
     if len(dupe_groups) == 0:
-        MessageBox.Show('Scritp execution completed: No duplicates found in the comics selected', 'Sucess', MessageBoxButtons.OK, MessageBoxIcon.Information)
+        MessageBox.Show('Script execution completed: No duplicates found in the comics selected', 'Success', MessageBoxButtons.OK, MessageBoxIcon.Information)
         logfile.write('\n\n\n\ ########################################################### \n\n\n')
         logfile.write('Scritp execution completed: No duplicates found in the comics selected')
         
